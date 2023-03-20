@@ -1,0 +1,128 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height:100vh;
+    background-color: hsl(217, 54%, 11%);
+}
+
+main{
+    width:90%;
+    max-width: 312px;
+    padding:20px;
+    margin:30px auto;
+    background-color: hsl(216, 50%, 16%);
+    border-radius:15px;
+    box-shadow:  hsl(218, 49%, 10%, 0.3)0px 15px 3px 40px,
+     hsl(218, 49%, 10%, 0.8)0px 25px 3px 15px;
+}
+
+/* ----------------Image section------------------------------------ */
+.image_section{
+    border-radius:8px;
+    overflow: hidden;
+    background: url(images/image-equilibrium.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 270px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image_section:hover{
+    background-color:hsla(178, 100%, 50%);
+    cursor: pointer;
+    z-index: 2;
+}
+.view_image{
+    z-index: 2;
+    display: none;
+}
+.image_section:hover .view_image{
+    display: block;
+}
+.image_section:hover .overlay{
+    background-color:hsla(178, 100%, 50%);
+    opacity: 0.6;
+    width:100%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* ---------------------------------------------------- */
+
+.description{
+    margin:25px 0 10px 0;
+}
+
+.description h1{
+    font-size:25px;
+    color:#fff;
+}
+
+.description h1:hover{
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+
+.description p{
+    margin:15px 0 0 0;
+    line-height:1.5em;
+    color: hsl(215, 51%, 70%);
+    font-weight:400;
+}
+
+.ETH{
+    display: flex;
+    align-items: center;
+    height:30px;
+}
+
+.ETH img{
+    display: block;
+}
+
+.ETH h1{
+    font-size:16px;
+    color:hsl(178, 100%, 50%);
+    margin-left:10px;
+    margin-right:auto;
+}
+.ETH p{
+    color: hsl(215, 51%, 70%);
+}
+
+.avatar{
+    display: flex;
+    margin:15px 0 0 0;
+    border-top: hsl(215, 32%, 27%) solid 1px;
+    padding:15px 0 0 0;
+}
+.avatar img{
+    width:35px;
+    height: 35px;
+    border-radius: 50%;
+    border:solid #fff 1.5px;
+}
+.avatar h1{
+    font-size:16px;
+    color:#fff;
+    font-weight: 300;
+    padding:5px 20px;
+}
+.avatar h1:hover{
+    cursor:pointer;
+    color: hsl(178, 100%, 50%);
+}
+span{
+    color: hsl(215, 51%, 70%);
+}
